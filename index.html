@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bicicletaria do Japonês — Bicicletas, peças e acessórios</title>
+  <meta name="description" content="Encontre bicicletas, peças e acessórios para aproveitar cada pedalada com qualidade e confiança.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&amp;family=Barlow:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="img/Mountain%20bike%20em%20destaque%20%E6%81%92%E4%B8%80.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ CABEÇALHO ============ -->
+<header class="topo">
+  <div class="wrap topo-in">
+    <a href="#inicio" class="logo" aria-label="Bicicletaria do Japonês — início">
+      <img src="img/Logo Esportivo Bicicletaria Japonês.png" alt="Bicicletaria do Japonês">
+    </a>
+    <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><i></i><i></i><i></i></button>
+    <nav id="menu" class="menu" aria-label="Menu principal">
+      <a href="#inicio">Início</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+      <a href="#contato" class="btn btn-seta menu-cta">Fale conosco</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- ============ HERO ============ -->
+<section id="inicio" class="hero" aria-labelledby="hero-titulo">
+  <div class="wrap hero-in">
+    <div class="hero-txt">
+      <h1 id="hero-titulo">Sua próxima<br> <em>pedalada</em><br> começa aqui.</h1>
+      <p>Encontre bicicletas, peças e acessórios para aproveitar cada pedalada com qualidade e confiança.</p>
+      <div class="acoes">
+        <a href="#produtos" class="btn btn-seta">Ver produtos</a>
+        <a href="#" data-wa class="btn alt">Fale pelo WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAIXA DE BENEFÍCIOS (textos editáveis) ============ -->
+<section class="faixa" aria-label="Destaques">
+  <ul class="wrap faixa-in">
+    <li><strong>Variedade de produtos</strong><p>Bicicletas, peças e acessórios em um só lugar.</p></li>
+    <li><strong>Qualidade e confiança</strong><p>Produtos escolhidos para o seu dia a dia.</p></li>
+    <li><strong>Atendimento especializado</strong><p>Converse com a equipe e tire suas dúvidas.</p></li>
+    <li><strong>Suporte ao ciclista</strong><p>Apoio para você pedalar com tranquilidade.</p></li>
+  </ul>
+</section>
+
+<!-- ============ CATÁLOGO ============ -->
+<section id="produtos" class="secao" aria-labelledby="catalogo-titulo">
+  <div class="wrap">
+    <div class="catalogo-topo">
+      <div>
+        <h2 id="catalogo-titulo">Produtos em destaque</h2>
+        <p>Escolha um produto e combine pagamento e entrega com a loja pelo WhatsApp.</p>
+      </div>
+    </div>
+
+    <div class="catalogo-controles" hidden>
+      <div class="catalogo-filtros" role="group" aria-label="Filtrar por categoria">
+        <button type="button" data-filtro="todos" aria-pressed="true">Todos</button>
+        <button type="button" data-filtro="bicicletas" aria-pressed="false">Bicicletas</button>
+        <button type="button" data-filtro="eletricas" aria-pressed="false">Elétricas</button>
+        <button type="button" data-filtro="acessorios" aria-pressed="false">Acessórios</button>
+        <button type="button" data-filtro="pecas" aria-pressed="false">Peças</button>
+      </div>
+      <label class="catalogo-busca" for="buscar-produto">
+        <span>Buscar produtos</span>
+        <input id="buscar-produto" type="search" placeholder="Bicicleta, capacete, pneu…">
+      </label>
+      <p class="catalogo-resultado" role="status"></p>
+    </div>
+
+    <div class="grade catalogo-lista">
+      <article class="produto" data-categoria="bicicletas">
+        <div class="media produto-foto">
+          <img src="img/produtos/gta-nx11.jpg" alt="Bicicleta GTA NX11 na cor azul" loading="lazy" decoding="async">
+        </div>
+        <div class="produto-corpo">
+          <p class="produto-tipo">MTB</p>
+          <h3 id="gta-nx11-nome">Bicicleta GTA NX11 aro 29</h3>
+          <p class="produto-descricao">Quadro de alumínio tamanho 17, 21 velocidades e freios a disco.</p>
+          <p class="produto-preco">R$ 1.690,00</p>
+          <a href="#contato" class="btn btn-seta" data-wa-produto aria-describedby="gta-nx11-nome">Comprar no WhatsApp</a>
+        </div>
+      </article>
+      <article class="produto" data-categoria="bicicletas">
+        <div class="media produto-foto">
+          <img src="img/produtos/ecos-aro-20.jpg" alt="Bicicleta Ecos vermelha e preta" loading="lazy" decoding="async">
+        </div>
+        <div class="produto-corpo">
+          <p class="produto-tipo">Aro 20</p>
+          <h3 id="ecos-aro-20-nome">Bicicleta Ecos aro 20</h3>
+          <p class="produto-descricao">Quadro de alumínio vermelho e preto com freios V-brake.</p>
+          <p class="produto-preco">R$ 899,00</p>
+          <a href="#contato" class="btn btn-seta" data-wa-produto aria-describedby="ecos-aro-20-nome">Comprar no WhatsApp</a>
+        </div>
+      </article>
+      <article class="produto" data-categoria="eletricas">
+        <div class="media produto-foto">
+          <img src="img/produtos/duos.jpg" alt="Bicicleta elétrica Duos Confort" loading="lazy" decoding="async">
+        </div>
+        <div class="produto-corpo">
+          <p class="produto-tipo">Elétrica</p>
+          <h3 id="duos-nome">Bicicleta elétrica Duos</h3>
+          <p class="produto-descricao">Modelo Confort com pedal assistido, farol de LED e para-lamas.</p>
+          <p class="produto-preco">R$ 5.400,00</p>
+          <a href="#contato" class="btn btn-seta" data-wa-produto aria-describedby="duos-nome">Comprar no WhatsApp</a>
+        </div>
+      </article>
+      <article class="produto" data-categoria="acessorios">
+        <div class="media produto-foto">
+          <img src="img/produtos/capacete-absolute.jpg" alt="Capacete Absolute Nero com luz traseira" loading="lazy" decoding="async">
+        </div>
+        <div class="produto-corpo">
+          <p class="produto-tipo">Segurança</p>
+          <h3 id="capacete-absolute-nome">Capacete Absolute Nero com LED</h3>
+          <p class="produto-descricao">Capacete para ciclismo com luz traseira integrada.</p>
+          <p class="produto-preco">R$ 138,00</p>
+          <a href="#contato" class="btn btn-seta" data-wa-produto aria-describedby="capacete-absolute-nome">Comprar no WhatsApp</a>
+        </div>
+      </article>
+      <article class="produto" data-categoria="pecas">
+        <div class="media produto-foto">
+          <img src="img/produtos/pneu-vee-rubber.jpg" alt="Pneu Vee Rubber preto com cravos" loading="lazy" decoding="async">
+        </div>
+        <div class="produto-corpo">
+          <p class="produto-tipo">Pneus</p>
+          <h3 id="pneu-vee-rubber-nome">Pneu Vee Rubber aro 29</h3>
+          <p class="produto-descricao">Pneu preto para MTB, na medida 29 × 2,10.</p>
+          <p class="produto-preco">R$ 109,00</p>
+          <a href="#contato" class="btn btn-seta" data-wa-produto aria-describedby="pneu-vee-rubber-nome">Comprar no WhatsApp</a>
+        </div>
+      </article>
+      <article class="produto" data-categoria="acessorios">
+        <div class="media produto-foto">
+          <img src="img/produtos/bolsa-quadro.jpg" alt="Bolsa para fixar no quadro da bicicleta" loading="lazy" decoding="async">
+        </div>
+        <div class="produto-corpo">
+          <p class="produto-tipo">Acessórios</p>
+          <h3 id="bolsa-quadro-nome">Bolsa de quadro para bicicleta</h3>
+          <p class="produto-descricao">Fixação no tubo dianteiro para levar ferramentas e itens pequenos.</p>
+          <p class="produto-preco">R$ 35,00</p>
+          <a href="#contato" class="btn btn-seta" data-wa-produto aria-describedby="bolsa-quadro-nome">Comprar no WhatsApp</a>
+        </div>
+      </article>
+    </div>
+    <div class="catalogo-vazio" hidden>
+      <p>Nenhum produto corresponde à busca.</p>
+      <button type="button" class="btn alt" id="limpar-filtros">Limpar filtros</button>
+    </div>
+
+    <p class="catalogo-nota">Confirme o preço e a disponibilidade com a loja antes de concluir a compra.</p>
+  </div>
+</section>
+
+<!-- ============ CATEGORIAS ============ -->
+<section id="categorias" class="secao">
+  <div class="wrap">
+    <h2 class="rv">Explore nossas categorias</h2>
+    <div class="grade">
+      <!-- data-wa = categoria usada na mensagem do WhatsApp -->
+      <article class="card rv">
+        <div class="media" hidden><img src="img/bicicletas.jpg" alt="Bicicletas" decoding="async" fetchpriority="low" onload="this.parentElement.hidden = false"></div>
+        <div class="card-c"><h3>Bicicletas</h3><p>Modelos para diferentes estilos de pedalada.</p><a href="#" data-wa="Bicicletas" class="btn alt btn-seta">Consultar produtos</a></div>
+      </article>
+      <article class="card rv">
+        <div class="media" hidden><img src="img/pecas.jpg" alt="Peças e componentes" decoding="async" fetchpriority="low" onload="this.parentElement.hidden = false"></div>
+        <div class="card-c"><h3>Peças e componentes</h3><p>Itens para manter sua bicicleta em dia.</p><a href="#" data-wa="Peças e componentes" class="btn alt btn-seta">Consultar produtos</a></div>
+      </article>
+      <article class="card rv">
+        <div class="media" hidden><img src="img/capacetes.jpg" alt="Capacetes e segurança" decoding="async" fetchpriority="low" onload="this.parentElement.hidden = false"></div>
+        <div class="card-c"><h3>Capacetes e segurança</h3><p>Proteção para pedalar com mais tranquilidade.</p><a href="#" data-wa="Capacetes e segurança" class="btn alt btn-seta">Consultar produtos</a></div>
+      </article>
+      <article class="card rv">
+        <div class="media" hidden><img src="img/acessorios.jpg" alt="Acessórios para ciclismo" decoding="async" fetchpriority="low" onload="this.parentElement.hidden = false"></div>
+        <div class="card-c"><h3>Acessórios para ciclismo</h3><p>Itens para deixar cada pedalada mais prática.</p><a href="#" data-wa="Acessórios para ciclismo" class="btn alt btn-seta">Consultar produtos</a></div>
+      </article>
+      <article class="card rv">
+        <div class="media" hidden><img src="img/pneus.jpg" alt="Pneus e câmaras" decoding="async" fetchpriority="low" onload="this.parentElement.hidden = false"></div>
+        <div class="card-c"><h3>Pneus e câmaras</h3><p>Opções para diferentes aros e usos.</p><a href="#" data-wa="Pneus e câmaras" class="btn alt btn-seta">Consultar produtos</a></div>
+      </article>
+      <article class="card rv">
+        <div class="media" hidden><img src="img/ferramentas.jpg" alt="Ferramentas e manutenção" decoding="async" fetchpriority="low" onload="this.parentElement.hidden = false"></div>
+        <div class="card-c"><h3>Ferramentas e manutenção</h3><p>Itens para cuidar da sua bicicleta.</p><a href="#" data-wa="Ferramentas e manutenção" class="btn alt btn-seta">Consultar produtos</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ATENDIMENTO ============ -->
+<section id="servicos" class="ajuda">
+  <div class="wrap ajuda-in">
+    <div class="media rv" hidden><img src="img/manutencao.jpg" alt="Pessoa fazendo manutenção em uma bicicleta" decoding="async" fetchpriority="low" onload="this.parentElement.hidden = false"></div>
+    <div class="ajuda-txt rv">
+      <h2>Precisa de ajuda para escolher?</h2>
+      <p>Entre em contato e encontre as opções ideais para sua bicicleta e suas necessidades.</p>
+      <a href="#" data-wa class="btn btn-seta">Fale com nossa equipe</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INSTITUCIONAL (texto neutro, personalize depois) ============ -->
+<section id="sobre" class="secao">
+  <div class="wrap sobre rv">
+    <h2>Conheça a Bicicletaria do Japonês</h2>
+    <div>
+      <p>A Bicicletaria do Japonês é um espaço voltado ao universo do ciclismo, com bicicletas, peças e acessórios para quem gosta de pedalar.</p>
+      <p>Nosso objetivo é atender cada cliente com atenção, ajudando a encontrar a opção certa para o seu uso.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTATO E LOCALIZAÇÃO ============ -->
+<section id="contato" class="secao cinza">
+  <div class="wrap contato">
+    <div class="rv">
+      <h2>Contato e localização</h2>
+      <dl class="info">
+        <div><dt>Empresa</dt><dd>Bicicletaria do Japonês</dd></div>
+        <div><dt>Endereço</dt><dd data-info="endereco">Endereço a informar</dd></div>
+        <div><dt>Telefone</dt><dd data-info="telefone">Telefone a informar</dd></div>
+        <div><dt>WhatsApp</dt><dd data-info="whatsapp">WhatsApp a informar</dd></div>
+        <div><dt>Horário</dt><dd data-info="horario">Horário a informar</dd></div>
+        <div><dt>E-mail</dt><dd><a href="mailto:bicicletariajapones@hotmail.com">bicicletariajapones@hotmail.com</a></dd></div>
+      </dl>
+      <div class="acoes">
+        <a href="#" data-wa class="btn btn-seta">Abrir WhatsApp</a>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Bicicletaria+do+Japon%C3%AAs+Ca%C3%A7apava" class="btn alt btn-seta">Como chegar</a>
+      </div>
+    </div>
+    <!-- Para o mapa: cole aqui o <iframe> do Google Maps (Compartilhar > Incorporar um mapa) -->
+    <div class="mapa rv" id="mapa"><span><iframe title="Localização da Bicicletaria do Japonês" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.8436621673254!2d-45.707281800000004!3d-23.102818199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc517a592d06d1%3A0xa972a9d1d0d6219f!2sBicicletaria%20do%20Japon%C3%AAs!5e0!3m2!1spt-BR!2sbr!4v1795474076371!5m2!1spt-BR!2sbr" width="800" height="800" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></span></div>
+    
+  </div>
+</section>
+</main>
+
+<!-- ============ RODAPÉ ============ -->
+<footer class="rodape">
+  <div class="wrap rodape-in">
+    <div><strong>BICICLETARIA DO JAPONÊS</strong><p>Bicicletas, peças e acessórios.</p></div>
+    <nav aria-label="Rodapé"><a href="#inicio">Início</a><a href="#produtos">Produtos</a><a href="#servicos">Serviços</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a></nav>
+    <div>
+      <span data-info="telefone">Telefone a informar</span>
+      <span data-info="endereco">Endereço a informar</span>
+      <!-- Redes sociais: aparecem só se preenchidas em script.js -->
+      <a href="#" data-social="instagram" hidden>Instagram</a>
+      <a href="#" data-social="facebook" hidden>Facebook</a>
+    </div>
+  </div>
+  <p class="direitos">© <span id="ano"></span> Bicicletaria do Japonês. Todos os direitos reservados.</p>
+  
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
